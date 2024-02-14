@@ -1,20 +1,12 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import RootLayout from '../layouts/RootLayout.astro'
+
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body class="dark:bg-neutral-900">
-		<Header />
+
+<RootLayout>
 		<main>
 			<h1>pagina Principal</h1>
 		</main>
-		<Footer />
-	</body>
-</html>
+
+</RootLayout>
